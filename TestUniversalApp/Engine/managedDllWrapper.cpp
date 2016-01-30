@@ -50,20 +50,13 @@ double Engine::managedDllWrapper::DivideWrapper(double a, double b)
 	{
 		throw  Platform::Exception::CreateException(-1);
 	}
-	//catch (const std::exception& e)
-	//{
-	//	Sestem
-	//	//TCHAR msg[256];
-	//	//e.GetErrorMessage(msg, 256);
-	//	throw  CException("failed");
-
-	//	//throw gcnew System::Exception(gcnew System::String(ex.what()));
-
-	//}
-	///*catch (CException& ex) 
-	//{
-	//	TCHAR msg[256];
-	//	ex.GetErrorMessage(msg, 256);
-	//}*/
-	//
 }
+
+void Engine::managedDllWrapper::GetModel(double wage)
+{
+	ReturnModel* model =  myCppClass->GetModel(12.0);
+	throw ref new Platform::NotImplementedException();
+}
+
+
+

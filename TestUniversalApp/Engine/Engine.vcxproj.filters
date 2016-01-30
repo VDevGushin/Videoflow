@@ -5,16 +5,31 @@
       <UniqueIdentifier>3e695e81-508b-49fc-b3c8-d0e73d46343b</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{148c2f1b-32f5-4407-bcf1-01d6ef7d8819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\ModelWraper">
+      <UniqueIdentifier>{e2b180bd-3001-4300-a8e9-7329aeede3b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="MathFuncs.cpp" />
     <ClCompile Include="managedDllWrapper.cpp" />
+    <ClCompile Include="ReturnModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="MathFuncs.h" />
     <ClInclude Include="managedDllWrapper.h" />
     <ClInclude Include="Error.h" />
+    <ClInclude Include="ReturnModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="EmployeeWrapper.h">
+      <Filter>Model\ModelWraper</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
