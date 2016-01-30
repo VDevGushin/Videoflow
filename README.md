@@ -6,5 +6,3 @@ Release 1.0.1.1
 CPP flow
 123
 SomeTime
-
-Ola jopa
