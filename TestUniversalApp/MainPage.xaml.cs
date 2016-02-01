@@ -23,7 +23,7 @@ namespace TestUniversalApp
     interface IVisitor
     {
         void VisitPersonAcc(Person acc);
-        void ShowDialog(string msg);
+       
         void VisitCompanyAc(Company acc);
       
     }
@@ -32,11 +32,7 @@ namespace TestUniversalApp
     class HtmlVisitor : IVisitor
     {
 
-        public   void ShowDialog(string msg)
-        {
-         //   var dialog = new MessageDialog(msg);
-          //  await dialog.ShowAsync();
-        }
+      
 
         public void VisitCompanyAc(Company acc)
         {
@@ -45,7 +41,7 @@ namespace TestUniversalApp
             result += "<tr><td>RegNumber<td><td>" + acc.RegNumber + "</td></tr>";
             result += "<tr><td>Number<td><td>" + acc.Number + "</td></tr></table>";
             Debug.WriteLine(result);
-            ShowDialog(result);
+           
         }
 
         public void VisitPersonAcc(Person acc)
@@ -54,25 +50,20 @@ namespace TestUniversalApp
             result += "<tr><td>FIO<td><td>" + acc.FIO + "</td></tr>";
             result += "<tr><td>Number<td><td>" + acc.AccNumber + "</td></tr></table>";
             Debug.WriteLine(result);
-            ShowDialog(result);
+          
         }
     }
 
     class XmlVisitor : IVisitor
     {
-        public  void ShowDialog(string msg)
-        {
-       //     var dialog = new MessageDialog(msg);
-         //   await dialog.ShowAsync();
-        }
-
+      
         public void VisitCompanyAc(Company acc)
         {
             string result = "<Company><Name>" + acc.Name + "</Name>" +
           "<RegNumber>" + acc.RegNumber + "</RegNumber>" +
           "<Number>" + acc.Number + "</Number><Company>";
             Debug.WriteLine(result);
-            ShowDialog(result);
+        
         }
 
         public void VisitPersonAcc(Person acc)
@@ -80,7 +71,7 @@ namespace TestUniversalApp
             string result = "<Person><Name>" + acc.FIO + "</Name>" +
         "<Number>" + acc.AccNumber + "</Number><Person>";
             Debug.WriteLine(result);
-            ShowDialog(result);
+         
         }
     }
 
