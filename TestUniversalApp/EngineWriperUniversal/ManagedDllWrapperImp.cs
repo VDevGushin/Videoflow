@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace EngineWriperUniversal
         {
             return managedWrapper.AddWrapper(a, b);
         }
+
         public double DivideWrapper(double a, double b)
         {
             try
@@ -26,7 +28,9 @@ namespace EngineWriperUniversal
             }
             catch (Exception ex)
             {
-                throw;
+                //throw;               
+                Debug.WriteLine(ex.Message);
+                return 0.0;
             }
 
         }

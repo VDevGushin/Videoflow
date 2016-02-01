@@ -1,6 +1,7 @@
 #pragma once
 #include "MathFuncs.h"
 
+
 namespace Engine {
 
 
@@ -12,8 +13,6 @@ namespace Engine {
 		double SubtractWrapper(double a, double b);
 		double MultiplyWrapper(double a, double b);
 		double DivideWrapper(double a, double b);
-	
-	
 	private:
 		MathFuncs *myCppClass;
 	};

@@ -23,3 +23,5 @@ double MathFuncs::Divide(double a, double b)
 		throw   invalid_argument("b cannot be zero!");
 	return 0;
 }
+
+
