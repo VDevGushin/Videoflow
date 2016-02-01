@@ -32,8 +32,6 @@ double Engine::managedDllWrapper::MultiplyWrapper(double a, double b)
 	return myCppClass->Multiply(a, b);
 }
 
-
-
 double Engine::managedDllWrapper::DivideWrapper(double a, double b)
 {
 	try
@@ -52,11 +50,6 @@ double Engine::managedDllWrapper::DivideWrapper(double a, double b)
 	}
 }
 
-void Engine::managedDllWrapper::GetModel(double wage)
-{
-	ReturnModel* model =  myCppClass->GetModel(12.0);
-	throw ref new Platform::NotImplementedException();
-}
 
 
 

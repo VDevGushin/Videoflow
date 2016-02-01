@@ -24,10 +24,4 @@ double MathFuncs::Divide(double a, double b)
 	return 0;
 }
 
-ReturnModel* MathFuncs::GetModel(double age)
-{
-	ReturnModel* rm =new   ReturnModel();
-	double wage = rm->joe.wage;
-	
-	return new ReturnModel();
-}
+
